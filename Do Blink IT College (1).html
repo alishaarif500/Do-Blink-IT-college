@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Do Blink IT College</title>
+<meta name="description" content="Do Blink IT College: practical IT courses, admissions and student support.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1B3D;--ink:#0F1E3A;--muted:#52617F;--blue:#2F6BFF;--cyan:#16C4E0;--bg:#fff;--soft:#F1F5FF;--card:#fff;--line:#DCE4F5;--on-navy:#fff;--r:14px;
+--head:'Sora','Segoe UI',system-ui,sans-serif;--body:'DM Sans','Segoe UI',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#E8EEFF;--muted:#9DAACB;--blue:#6E97FF;--bg:#070F22;--soft:#0C1833;--card:#0F1D3D;--line:#1E2E55}}
+:root[data-theme="dark"]{--ink:#E8EEFF;--muted:#9DAACB;--blue:#6E97FF;--bg:#070F22;--soft:#0C1833;--card:#0F1D3D;--line:#1E2E55}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body);min-height:100%}
+h1,h2,h3{font-family:var(--head);line-height:1.2;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2rem,5.5vw,3.5rem)}h2{font-size:clamp(1.5rem,3.4vw,2.2rem)}h3{font-size:1.15rem}
+p{margin:0 0 1em;max-width:68ch}a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+section.s{padding:4.5rem 0}.alt{background:var(--soft)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--navy);color:var(--on-navy)}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:1rem}
+.logo{font:700 1.15rem var(--head);color:#fff;text-decoration:none;display:flex;align-items:center;gap:.5rem}
+.logo i{width:.8rem;height:1.2rem;background:var(--cyan);display:inline-block;border-radius:2px;animation:blink 1.1s steps(1) infinite}
+nav{display:flex;gap:.25rem;align-items:center}
+nav a{color:#D5E0FF;text-decoration:none;padding:.55rem .8rem;border-radius:8px;font-weight:500}
+nav a:hover,nav a[aria-current="page"]{background:rgba(255,255,255,.12);color:#fff}
+.menu{display:none;background:none;border:1px solid rgba(255,255,255,.35);color:#fff;border-radius:8px;min-height:44px;min-width:44px;font-size:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.4rem;min-height:46px;padding:.65rem 1.3rem;border-radius:10px;border:2px solid var(--blue);background:var(--blue);color:#fff;font:700 1rem var(--body);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px);background:#1F55E0}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn.ghost:hover{background:var(--soft);border-color:var(--blue)}
+.btn.light{background:#fff;color:var(--navy);border-color:#fff}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+.hero{background:var(--navy);color:#fff;padding:4.5rem 0 5rem}
+.hero .g{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero p{color:#C7D4F5;font-size:1.15rem}
+.caret{display:inline-block;width:.45em;height:.85em;background:var(--cyan);margin-left:.12em;vertical-align:-.05em;animation:blink 1.1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.acts{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.6rem}
+.term{background:#050D20;border:1px solid #23376B;border-radius:var(--r);overflow:hidden;font:500 .95rem/1.8 ui-monospace,Consolas,monospace;color:#BFD0FF}
+.term b{display:block;background:#0E1E45;padding:.5rem 1rem;font-weight:500;color:#8DA4DC}
+.term div{padding:1rem 1.2rem}.term em{color:var(--cyan);font-style:normal}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;display:flex;flex-direction:column}
+.card p{color:var(--muted)}
+.ico{width:44px;height:44px;border-radius:10px;background:var(--soft);display:grid;place-items:center;margin-bottom:.9rem;color:var(--blue)}
+.alt .ico{background:var(--bg)}
+.tag{display:inline-block;font-size:.85rem;padding:.15rem .6rem;border-radius:99px;background:var(--soft);color:var(--blue);border:1px solid var(--line);margin:0 .4rem .4rem 0}
+.alt .tag{background:var(--bg)}
+.meta{margin-top:auto;padding-top:.6rem}
+.ph{font-size:.85rem;color:var(--muted);border-left:3px solid var(--cyan);padding-left:.7rem}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.filters{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 1.6rem;align-items:center}
+.filters input,.filters select{flex:1 1 200px}
+label{display:block;font-weight:700;margin:.9rem 0 .3rem}
+input,select,textarea{width:100%;min-height:46px;padding:.6rem .8rem;border:1.5px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+textarea{min-height:120px;resize:vertical}
+input[aria-invalid="true"],select[aria-invalid="true"],textarea[aria-invalid="true"]{border-color:#D93A4A}
+.err{color:#D93A4A;font-size:.92rem;min-height:1.2em;margin:.25rem 0 0}
+.ok{background:var(--soft);border:1px solid var(--cyan);border-radius:var(--r);padding:1.2rem}
+details{border:1px solid var(--line);border-radius:12px;background:var(--card);padding:.9rem 1.1rem;margin-bottom:.7rem}
+summary{cursor:pointer;font-weight:700}
+details p{margin:.6rem 0 0;color:var(--muted)}
+.cta{background:var(--navy);color:#fff;border-radius:20px;padding:2.5rem;display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.cta p{color:#C7D4F5;margin:0}
+ol.mod{padding-left:1.2rem}ol.mod li{margin-bottom:.4rem}
+footer{background:var(--navy);color:#C7D4F5;padding:3rem 0 2rem}
+footer .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+footer a{color:#C7D4F5;display:block;padding:.2rem 0}footer h3{color:#fff}
+.crumb{margin-bottom:1rem}
+@media (max-width:820px){
+.hero .g,.split{grid-template-columns:1fr;gap:2rem}
+.menu{display:block}
+nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--navy);flex-direction:column;align-items:stretch;padding:.6rem 1.25rem 1rem;border-top:1px solid #23376B}
+nav.open{display:flex}nav a{padding:.8rem}
+section.s{padding:3rem 0}.hero{padding:3rem 0}.cta{padding:1.6rem}
+}
+@media (prefers-reduced-motion:reduce){.caret,.logo i{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#home" aria-label="Do Blink IT College home"><i></i>Do Blink IT College</a>
+<button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" aria-label="Main">
+<a href="#home" data-p="home">Home</a><a href="#about" data-p="about">About</a><a href="#courses" data-p="courses">Courses</a><a href="#contact" data-p="contact">Contact</a><a class="btn" href="#admissions" style="min-height:40px;padding:.4rem 1rem">Apply now</a>
+</nav></div></header>
+<main id="app"></main>
+<footer><div class="wrap">
+<div class="grid">
+<div><h3>Do Blink IT College</h3><p>Practical IT education. Tagline to be confirmed by the college.</p></div>
+<div><h3>Explore</h3><a href="#about">About us</a><a href="#courses">Courses</a><a href="#admissions">Admissions</a><a href="#contact">Contact</a></div>
+<div><h3>Contact</h3><a href="#contact">[Phone: to be added]</a><a href="#contact">[Email: to be added]</a><a href="#contact">[Address: to be added]</a></div>
+<div><h3>Social</h3><p>Social media links will be added when the college provides them.</p></div>
+</div>
+<p style="margin-top:2rem;font-size:.9rem">&copy; 2026 Do Blink IT College. All rights reserved.</p>
+</div></footer>
+<script>
+(function(){
+var C=[
+{id:"web-basics",cat:"Web",t:"Web Development Basics",lv:"Beginner",d:"[Duration: to be confirmed]",desc:"Build and publish simple websites using HTML, CSS and JavaScript.",req:"Basic computer skills.",out:["Build responsive pages","Use core JavaScript","Publish a small project"],mods:["How the web works","HTML structure","CSS layout","JavaScript basics","Final project"]},
+{id:"python",cat:"Programming",t:"Python Programming",lv:"Beginner",d:"[Duration: to be confirmed]",desc:"Learn programming logic and write useful scripts in Python.",req:"No prior coding needed.",out:["Write clean Python","Solve problems with logic","Work with files and data"],mods:["Variables and types","Control flow","Functions","Files and data","Mini project"]},
+{id:"graphic",cat:"Design",t:"Graphic Design Essentials",lv:"Beginner",d:"[Duration: to be confirmed]",desc:"Learn layout, colour and typography with practical design tasks.",req:"Basic computer skills.",out:["Apply design principles","Create social and print designs","Build a portfolio"],mods:["Design principles","Colour and type","Layout","Brand assets","Portfolio"]},
+{id:"office",cat:"Office Skills",t:"Computer and Office Skills",lv:"Beginner",d:"[Duration: to be confirmed]",desc:"Confident daily computer use, documents, spreadsheets and email.",req:"None.",out:["Use documents and sheets","Manage files and email","Work safely online"],mods:["Computer basics","Documents","Spreadsheets","Presentations","Online safety"]},
+{id:"js",cat:"Programming",t:"JavaScript and React",lv:"Intermediate",d:"[Duration: to be confirmed]",desc:"Build interactive web apps with modern JavaScript and React.",req:"Web basics or equal experience.",out:["Build component-based apps","Handle data and state","Deploy a project"],mods:["Modern JavaScript","React components","State and forms","Working with APIs","Capstone"]},
+{id:"data",cat:"Programming",t:"Database and SQL Fundamentals",lv:"Intermediate",d:"[Duration: to be confirmed]",desc:"Design tables and query data with SQL.",req:"Basic programming helps.",out:["Design relational tables","Write SQL queries","Understand data integrity"],mods:["Data modelling","SQL queries","Joins","Constraints","Practice project"]}];
+var ic='<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+var I={code:ic+'<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>',book:ic+'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/></svg>',users:ic+'<circle cx="9" cy="8" r="4"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1M17 4a4 4 0 0 1 0 8"/></svg>',rocket:ic+'<path d="M5 15c-1.5 1.3-2 5-2 5s3.7-.5 5-2M12 15l-3-3a22 22 0 0 1 2-4 12 12 0 0 1 11-5c0 3-1 8-5 11a22 22 0 0 1-4 2z"/></svg>',target:ic+'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg>',shield:ic+'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>'};
+var app=document.getElementById('app'),sel='';
+function e(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function cc(c){return '<article class="card"><span class="tag" style="align-self:flex-start">'+e(c.cat)+'</span><h3>'+e(c.t)+'</h3><p>'+e(c.desc)+'</p><div class="meta"><span class="tag">'+e(c.lv)+'</span><span class="tag">'+e(c.d)+'</span><span class="tag">Fee: [to be set by admin]</span><div class="acts" style="margin-top:.6rem"><a class="btn ghost" href="#course-'+c.id+'">View details</a><a class="btn" href="#admissions" data-c="'+c.id+'">Enroll</a></div></div></article>'}
+function feat(i,t,p){return '<div class="card"><div class="ico">'+I[i]+'</div><h3>'+t+'</h3><p>'+p+'</p></div>'}
+function cta(){return '<section class="s"><div class="wrap"><div class="cta"><div><h2 style="margin-bottom:.3rem">Ready to start learning?</h2><p>Send your application or ask us a question. We reply to every message.</p></div><div class="acts" style="margin:0"><a class="btn light" href="#admissions">Apply for admission</a><a class="btn ghost" style="color:#fff;border-color:#3A5190" href="#contact">Contact us</a></div></div></div></section>'}
+var V={};
+V.home=function(){return '<section class="hero"><div class="wrap g"><div><h1>Learn IT skills by doing them<span class="caret" aria-hidden="true"></span></h1><p>Do Blink IT College teaches technology through hands-on practice, so every lesson ends with something you built yourself.</p><div class="acts"><a class="btn" href="#admissions">Apply for admission</a><a class="btn ghost" style="color:#fff;border-color:#3A5190" href="#courses">Browse courses</a></div></div><div class="term" aria-hidden="true"><b>practice.js</b><div>&gt; learn(<em>"a new skill"</em>)<br>&gt; build(<em>"a real project"</em>)<br>&gt; getFeedback()<br>&gt; grow<span class="caret"></span></div></div></div></section>'+
+'<section class="s"><div class="wrap split"><div><h2>About Do Blink IT College</h2><p>We help students build practical technology skills for study, work and personal projects. Our classes focus on doing, not just listening.</p><p class="ph">Placeholder text. Replace with the college’s own introduction.</p><a class="btn ghost" href="#about">Read more about us</a></div><div class="grid" style="grid-template-columns:1fr 1fr">'+feat('code','Practical training','Lessons built around exercises and projects.')+feat('users','Student support','Guidance from enquiry to enrollment.')+'</div></div></section>'+
+'<section class="s alt"><div class="wrap"><h2>Why choose our college</h2><div class="grid">'+feat('target','Clear learning paths','Each course lists its outline and outcomes before you enroll.')+feat('book','Structured curriculum','Modules move from basics to project work.')+feat('rocket','Career-focused skills','Skills chosen for study, jobs and freelance work.')+feat('shield','Simple admissions','Apply online and track your application status.')+'</div></div></section>'+
+'<section class="s"><div class="wrap"><h2>Featured courses</h2><p class="ph">Sample courses. The college will confirm the real list, durations and fees.</p><div class="grid">'+C.slice(0,3).map(cc).join('')+'</div><div class="acts"><a class="btn ghost" href="#courses">See all courses</a></div></div></section>'+
+'<section class="s alt"><div class="wrap split"><div><h2>Learning by practice</h2><p>Every module includes hands-on work. Students apply new ideas straight away, get feedback, and finish with projects they can show others.</p><p class="ph">Placeholder text. Add actual lab, class size and schedule details when available.</p></div><div><h3>What students gain</h3><ol class="mod"><li>Skills they can use immediately</li><li>A portfolio of finished work</li><li>Confidence with real tools</li></ol></div></div></section>'+
+'<section class="s"><div class="wrap"><h2>Student testimonials</h2><div class="grid"><div class="card"><p>“Sample testimonial placeholder. Real student feedback will appear here.”</p><span class="ph">Sample only: [Student name], [Course]</span></div><div class="card"><p>“Sample testimonial placeholder. Add only genuine, permitted quotes.”</p><span class="ph">Sample only: [Student name], [Course]</span></div></div></div></section>'+
+'<section class="s alt"><div class="wrap"><h2>Frequently asked questions</h2>'+faq()+'</div></section>'+cta()};
+function faq(){return [["How do I apply?","Open the admissions page, complete the form and submit it. The college reviews each application."],["Do I need experience?","Beginner courses need none. Each course page lists its requirements."],["What are the fees?","Fees are shown on each course and will be confirmed by the college."],["Can I ask questions first?","Yes. Use the contact page and we will reply."]].map(function(q){return '<details><summary>'+q[0]+'</summary><p>'+q[1]+'</p></details>'}).join('')}
+V.about=function(){return '<section class="s"><div class="wrap"><h1>About us</h1><p>Do Blink IT College is an IT training college focused on practical learning and student growth.</p><p class="ph">Placeholder introduction. Replace with the college’s story. No awards, accreditation or partnerships are claimed here.</p></div></section><section class="s alt"><div class="wrap"><div class="grid">'+feat('target','Mission','To make quality IT education accessible and practical. [Editable]')+feat('rocket','Vision','Students who can build, solve and grow with technology. [Editable]')+feat('book','Educational objectives','Build skills, confidence and the habit of continuous learning. [Editable]')+'</div></div></section><section class="s"><div class="wrap split"><div><h2>Teaching methodology</h2><p>We explain a concept briefly, demonstrate it, then students practise it on guided tasks and projects.</p><h2>Practical learning approach</h2><p>Most class time goes to hands-on work, with feedback along the way.</p></div><div><h2>Why students choose us</h2><ol class="mod"><li>Hands-on lessons</li><li>Clear course outlines</li><li>Simple admissions</li><li>Support from enquiry to enrollment</li></ol></div></div></section>'+cta()};
+V.courses=function(){var cats=['All'];C.forEach(function(c){if(cats.indexOf(c.cat)<0)cats.push(c.cat)});
+return '<section class="s"><div class="wrap"><h1>Courses</h1><p class="ph">Sample course listings with editable placeholders. Final courses and fees will be set by the college.</p><div class="filters"><input id="q" type="search" placeholder="Search courses" aria-label="Search courses"><select id="cat" aria-label="Category">'+cats.map(function(c){return '<option>'+c+'</option>'}).join('')+'</select></div><div class="grid" id="list"></div><p id="none" class="err" role="status"></p></div></section>'};
+V.courses.after=function(){var q=document.getElementById('q'),cat=document.getElementById('cat'),l=document.getElementById('list'),n=document.getElementById('none');
+function f(){var s=q.value.toLowerCase(),k=cat.value,r=C.filter(function(c){return(k==='All'||c.cat===k)&&(c.t+c.desc).toLowerCase().indexOf(s)>-1});l.innerHTML=r.map(cc).join('');n.textContent=r.length?'':'No courses match. Try a different search or category.'}
+q.oninput=f;cat.onchange=f;f()};
+function course(id){var c=C.filter(function(x){return x.id===id})[0];if(!c)return '<section class="s"><div class="wrap"><h1>Course not found</h1><a class="btn" href="#courses">Back to courses</a></div></section>';
+return '<section class="s"><div class="wrap"><a class="crumb" href="#courses">&larr; All courses</a><h1>'+e(c.t)+'</h1><p>'+e(c.desc)+'</p><span class="tag">'+e(c.lv)+'</span><span class="tag">'+e(c.d)+'</span><span class="tag">Fee: [to be set by admin]</span><div class="split" style="margin-top:2rem"><div><h2>Overview</h2><p>'+e(c.desc)+' [Full overview to be provided.]</p><h2>Objectives and outcomes</h2><ul>'+c.out.map(function(o){return '<li>'+e(o)+'</li>'}).join('')+'</ul><h2>Requirements</h2><p>'+e(c.req)+'</p></div><div><h2>Curriculum</h2><ol class="mod">'+c.mods.map(function(m){return '<li>'+e(m)+'</li>'}).join('')+'</ol><p class="ph">Sample modules. Final curriculum to be confirmed.</p><a class="btn" href="#admissions" data-c="'+c.id+'">Apply for this course</a></div></div></div></section>'}
+function field(id,l,type,extra){var inner=type==='textarea'?'<textarea id="'+id+'" name="'+id+'" '+(extra||'')+'></textarea>':type==='select'?'<select id="'+id+'" name="'+id+'">'+extra+'</select>':'<input id="'+id+'" name="'+id+'" type="'+type+'" '+(extra||'')+'>';return '<label for="'+id+'">'+l+'</label>'+inner+'<p class="err" id="'+id+'-e"></p>'}
+V.admissions=function(){return '<section class="s"><div class="wrap split"><div><h1>Admissions</h1><p>Complete the form to apply. We review applications and contact you about next steps.</p><p class="ph">Preview mode: submissions are checked but not stored until the backend is connected.</p></div><div id="box"><form id="f" novalidate>'+field('name','Full name','text','autocomplete="name"')+field('email','Email address','email','autocomplete="email"')+field('phone','Phone number','tel','autocomplete="tel"')+field('course','Course','select','<option value="">Select a course</option>'+C.map(function(c){return '<option value="'+c.id+'">'+e(c.t)+'</option>'}).join(''))+field('edu','Education level','select','<option value="">Select level</option><option>Matric</option><option>Intermediate</option><option>Bachelor’s</option><option>Master’s</option><option>Other</option>')+field('addr','Address','text','autocomplete="street-address"')+field('msg','Message (optional)','textarea')+'<div class="acts"><button class="btn" id="go" type="submit">Submit application</button></div></form></div></div></section>'};
+V.admissions.after=function(){if(sel)document.getElementById('course').value=sel;form('f',{name:'Enter your full name.',email:'Enter a valid email address.',phone:'Enter a phone number with at least 7 digits.',course:'Choose a course.',edu:'Choose your education level.',addr:'Enter your address.'},'Application received. Thank you! The college will contact you using the details you gave.')};
+V.contact=function(){return '<section class="s"><div class="wrap split"><div><h1>Contact us</h1><p>Questions about courses or admissions? Send a message.</p><div class="card"><p><strong>Phone:</strong> [to be added]</p><p><strong>Email:</strong> [to be added]</p><p><strong>Address:</strong> [to be added]</p><p><strong>WhatsApp:</strong> [link to be added]</p><p style="margin:0"><strong>Map:</strong> shown once the address is provided.</p></div></div><div id="box"><form id="f" novalidate>'+field('name','Your name','text','autocomplete="name"')+field('email','Email address','email','autocomplete="email"')+field('subj','Subject','text')+field('msg','Message','textarea')+'<div class="acts"><button class="btn" id="go" type="submit">Send message</button></div></form></div></div></section>'};
+V.contact.after=function(){form('f',{name:'Enter your name.',email:'Enter a valid email address.',subj:'Enter a subject.',msg:'Write a message of at least 10 characters.'},'Message sent. Thank you! We will reply by email.')};
+function form(id,m,done){var f=document.getElementById(id),sent=false;f.onsubmit=function(ev){ev.preventDefault();if(sent)return;var bad=0;
+Object.keys(m).forEach(function(k){var el=f.elements[k],v=el.value.trim(),ok=!!v;
+if(k==='email')ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);if(k==='phone')ok=v.replace(/\D/g,'').length>=7;if(k==='msg')ok=v.length>=10;
+el.setAttribute('aria-invalid',ok?'false':'true');document.getElementById(k+'-e').textContent=ok?'':m[k];if(!ok&&!bad){el.focus()}if(!ok)bad++});
+if(bad)return;sent=true;var b=document.getElementById('go');b.disabled=true;b.textContent='Sending...';
+setTimeout(function(){document.getElementById('box').innerHTML='<div class="ok" role="status"><h3>'+done.split('.')[0]+'.</h3><p style="margin:0">'+done.split('. ').slice(1).join('. ')+'</p></div>'},600)}}
+function route(){var h=(location.hash||'#home').slice(1),p=h.split('-')[0],html;
+if(h.indexOf('course-')===0)html=course(h.slice(7));else html=(V[h]||V.home)();
+app.innerHTML=html;if(V[h]&&V[h].after)V[h].after();
+document.querySelectorAll('nav a[data-p]').forEach(function(a){if(a.dataset.p===(h.indexOf('course-')===0?'courses':h))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+document.title=(h==='home'?'':h.replace('course-','Course: ')+' | ')+'Do Blink IT College';
+nav.classList.remove('open');menu.setAttribute('aria-expanded','false');window.scrollTo(0,0)}
+var nav=document.getElementById('nav'),menu=document.getElementById('menu');
+menu.onclick=function(){var o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o)};
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[data-c]');sel=a?a.dataset.c:sel});
+window.addEventListener('hashchange',route);route();
+})();
+</script>
+</body>
+</html>
